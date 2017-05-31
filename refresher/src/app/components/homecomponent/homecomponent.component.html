@@ -7,7 +7,25 @@
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
           </p>
           <div class="jumbotron">
-            <h1>Hello, HOME!</h1>
-            <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
-          </div>
-        </div><!--/.col-xs-12.col-sm-9-->
+            <h1>Dashboard</h1>
+            <p>This is an example if I can figure out how to get this done</p>
+            <!--<ol>
+              <li *ngFor = "let list of listOfGuys">{{list.name}}</li>
+            </ol>
+
+             Add <input type="text" [(ngModel)]= "selectedItem.name" #shoppingListItem>
+          </div>-->
+
+          <ul>
+       <li 
+       *ngFor = "let shoppingListItem of shoppingListItems"
+       (click)="onItemClicked(shoppingListItem)"
+       >{{shoppingListItem.name}}</li>
+    
+    </ul>
+    <input type="text" [(ngModel)]= "selectedItem.name" #shoppingListItem>
+    <br>
+    <button (click) ="addItem(shoppingListItem)">Add Name </button>
+    <button (click) ="removeItem()">Remove Name </button>
+
+        </div>
