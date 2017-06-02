@@ -9,11 +9,6 @@ export class HomecomponentComponent implements OnInit {
 
   constructor() { }
 
-// public listOfGuys = [
-// {  name:"Pulkit"},
-// {  name:"Jordan"},
-// {  name:"RIcky"},
-// {  name:"John"}
     public shoppingListItems = [{name:"Pulkit"}, {name:"Calem"}, {name:"Francois"}];
     public selectedItem = {name:""};
 

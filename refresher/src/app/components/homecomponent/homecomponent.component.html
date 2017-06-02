@@ -9,13 +9,6 @@
           <div class="jumbotron">
             <h1>Dashboard</h1>
             <p>This is an example if I can figure out how to get this done</p>
-            <!--<ol>
-              <li *ngFor = "let list of listOfGuys">{{list.name}}</li>
-            </ol>
-
-             Add <input type="text" [(ngModel)]= "selectedItem.name" #shoppingListItem>
-          </div>-->
-
           <ul>
        <li 
        *ngFor = "let shoppingListItem of shoppingListItems"
@@ -27,5 +20,4 @@
     <br>
     <button (click) ="addItem(shoppingListItem)">Add Name </button>
     <button (click) ="removeItem()">Remove Name </button>
-
-        </div>
+</div>
